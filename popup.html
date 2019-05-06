@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Extension - POPUP</title>
+    <link rel="stylesheet" href="./base.css">
+    <style>
+        input,
+        button,
+        .tips {
+            font-size: 9px;
+        }
+
+        body {
+            width: 300px;
+        }
+
+        .list .item {
+            display: flex;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .list .title {
+            width: 30px;
+            margin-right: 3px;
+        }
+
+        .list .url {
+            flex: 1;
+            margin-right: 3px;
+        }
+
+        .bottom {
+            text-align: center;
+        }
+
+        .tips {
+            margin-bottom: 3px;
+        }
+
+        .tips span {
+            color: red;
+        }
+
+        .add {
+            color: #3367d6;
+        }
+
+        .save {
+            color: #67c23a;
+        }
+
+        .del {
+            color: #f56c6c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tips">
+        搜索关键词请用 <span>%s</span> 代替，注意是小写
+    </div>
+    <div class="list"></div>
+    <div class="bottom">
+        <button class="add">新增</button>
+        <button class="save"">保存</button>
+    </div>
+    <script src=" ./popup.js"> </script> </body> </html>
