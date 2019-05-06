@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "description": "右键搜索扩展",
+    "icons": {
+        "16": "./search.png",
+        "48": "./search.png",
+        "128": "./search.png"
+    },
     "homepage_url": "https://github.com/hhp1614/SearchExtension",
     "permissions": [
         "contextMenus",
@@ -14,6 +19,8 @@
         "persistent": true
     },
     "browser_action": {
+        "default_icon": "./search.png",
+        "default_title": "右键搜索扩展",
         "default_popup": "popup.html"
     }
 }
